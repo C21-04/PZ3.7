@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Practice</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+        /* Додайте стилі для світло-сірого фону */
+        .list-item {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Практика з JQuery</h1>
+
+    <div id="task1">
+        <p class="highlight">Абзац 1</p>
+        <p class="highlight">Абзац 2</p>
+        <p class="highlight">Абзац 3</p>
+    </div>
+
+    <div id="task2">
+        <ul>
+            <li class="list-item">Eлемент 1</li>
+            <li class="list-item">Eлемент 2</li>
+            <li class="list-item">Eлемент 3</li>
+        </ul>
+    </div>
+
+    <script>
+        // Завдання 1: Зміна тексту всіх елементів <p> на "Змінений текст"
+        $('#task1 p').text('Змінений текст');
+    
+        // Завдання 2: Додавання класу highlight до елементу з ідентифікатором task1
+        $('#task1').addClass('highlight');
+    
+        // Завдання 3: Додавання класу list-item до всіх елементів <li>
+        $('#task2 li').addClass('list-item');
+        
+        // Завдання 1: Заміна коліру тексту всіх елементів з класом highlight на червоний з анімацією
+        $('.highlight').animate({ color: 'red' }, 1000);
+
+        // Завдання 2: Заміна фону всіх елементів з класом list-item на світло-сірий з анімацією
+        $('.list-item').animate({ backgroundColor: 'lightgray' }, 1000);
+    </script>
+
+</body>
+</html>
